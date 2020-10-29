@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="450.0" prefWidth="900.0" />
+      <TableView fx:id="tableContacto" layoutX="29.0" layoutY="110.0" prefHeight="200.0" prefWidth="847.0">
+         <columns>
+            <TableColumn fx:id="colExt" prefWidth="85.0" text="EXT" />
+            <TableColumn fx:id="colTelefono" prefWidth="130.0" text="TELEFONO" />
+            <TableColumn fx:id="colLada" prefWidth="69.0" text="LADA" />
+            <TableColumn fx:id="colCelular" prefWidth="141.0" text="CELULAR" />
+            <TableColumn fx:id="ColNumeroEmergencia" prefWidth="167.0" text="NUMERO DE EMERGENCIA" />
+            <TableColumn fx:id="ColCorreoElectronico" prefWidth="154.0" text="CORREO ELECTRONICO" />
+            <TableColumn fx:id="ColAcciones" prefWidth="100.0" text="ACCIONES" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
