@@ -48,3 +48,21 @@ create table trabajador_banco (
 	status varchar(2) default 'a' not null
 );
 
+
+CREATE TABLE `banco` (
+  `id` int(11) AUTO_INCREMENT primary key NOT NULL,
+  `clave` varchar(5) COLLATE utf8_spanish_ci NOT NULL DEFAULT '',
+  `nombre_corto` varchar(150) COLLATE utf8_spanish_ci NOT NULL DEFAULT '',
+  `razon_social` varchar(300) COLLATE utf8_spanish_ci NOT NULL DEFAULT '',
+  `nombre` varchar(200) COLLATE utf8_spanish_ci NOT NULL DEFAULT '',
+  `status` varchar(3) COLLATE utf8_spanish_ci NOT NULL DEFAULT 'a'
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+
+
+INSERT INTO `banco` (`id`, `clave`, `nombre_corto`, `razon_social`, `nombre`, `status`) VALUES
+(1, '001', 'HSBC', 'Hong Kong Bank2', '', 'a'),
+(7, '004', 'HONG KONG BANK', 'BAnco CHINO', '', 'a'),
+(4, 'SAN', 'SANTANDER', 'BAnco santander de hong kong', '', 'a'),
+(24, '120', 'Banco Virtual', 'Virtual bank', '', 'a'),
+(6, '12', 'Banco de Finlandia', 'banco del norte', '', 'a');
